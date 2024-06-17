@@ -1,3 +1,31 @@
 ram raju is good
 2line from hyderabad
-3rd line from ongole
+3rd line from ongol
+
+
+<directory>target</directory>
+    <outputDirectory>target/classes</outputDirectory>
+    <finalName>${artifactId}-${version}</finalName>
+    <testOutputDirectory>target/test-classes</testOutputDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+      </testResource>
+    </testResources>
+  </build>
+ 
+  <reporting>
+    <outputDirectory>target/site</outputDirectory>
+  </reporting>
+ 
+  <profiles>
+    <profile>
+      <id>release-profile</ide
